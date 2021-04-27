@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+   <head>
+      <title>MAMAMOO</title>
+      <style type="text/css">
+      * {
+         margin: 0;
+         padding: 0;
+      }
+      body {
+         font-family: FreeMono, monospace;
+         padding-top: 40px;
+      }
+      h1 {
+         background-color: #fdf9ee;
+         color: #656565;
+         height: 50px;
+         font-size: 40px;
+         font-weight: normal;
+         left: 0;
+         line-height: 40px;
+         position: fixed;
+         text-align: center;
+         top: 0;
+         width: 100%;
+         padding-top: 10px;
+         z-index: 1;
+      }
+
+      .photo {
+         background-attachment: fixed;
+         background-position: 50% 0;
+         background-repeat: no-repeat;
+         height: 450px;
+         position: relative;
+         max-width: 100%;
+
+
+      }
+      .photo span {
+         bottom: 0;
+         color: white;
+         display: block;
+         left: 50%;
+         margin-left: -640px;
+         font-size: 38px;
+         padding: 10px;
+         position: absolute;
+         width: 1280px;
+         text-shadow: #656565 0.1em 0.1em 0.2em;
+
+      }
+      .one {
+         background-size: 170% 100%;
+         background-image: url(img/art4.PNG);  
+      }
+      .two {
+         background-size: 170% 100%;
+         background-image: url(img/art2.PNG);
+      }
+      .three {
+         background-size: 170% 100%;
+         background-image: url(img/art3.PNG);
+      }
+      .four {
+         background-size: 170% 100%;
+         background-image: url(img/art1.PNG);
+      }
+
+      </style>
+
+
+      <script src="../js/jquery.min.js"></script>
+      <script src="../js/skroll.min.js"></script>
+      <script>
+      $(function(){
+         $.stellar({
+            horizontalScrolling: false,
+            verticalOffset: 40
+         });
+      });
+      </script>
+   </head>
+   <body style="zoom: 1;">
+      <h1>ANQI's FANART</h1>
+      <div class="photo one" data-stellar-background-ratio="0.5">
+         <span>HWASA</span>
+      </div>
+      <div class="photo two" data-stellar-background-ratio="0.5"><span>MOONBYUL</span></div>
+      <div class="photo three" data-stellar-background-ratio="0.5"><span>WHEEIN</span></div>
+      <div class="photo four" data-stellar-background-ratio="0.5"><span>SOLAR</span></div>
+      <div class="photo one" data-stellar-background-ratio="0.5"><span>HWASA</span></div>
+      <div class="photo two" data-stellar-background-ratio="0.5"><span>MOONBYUL</span></div>
+      <div class="photo three" data-stellar-background-ratio="0.5"><span>WHEEIN</span></div>
+      <div class="photo four" data-stellar-background-ratio="0.5"><span>SOLAR</span></div>
+   </body>
+</html>
